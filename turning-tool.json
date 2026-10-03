@@ -1,0 +1,20 @@
+{
+    "fileFormatVersion": "1",
+    "parameterSets": {
+        "New set 1": {
+            "$fn": "64",
+            "boltActuatorX": "4.7000000000000002",
+            "boltActuatorY": "20",
+            "boltActuatorZ": "3.3999999999999999",
+            "channelD": "4",
+            "fitTollerance": "0.75",
+            "handleLength": "50",
+            "keyD": "9.5",
+            "keyLength": "74",
+            "postD": "5.75",
+            "postLength": "25",
+            "ringPositions": "[52.5, 56, 63.5, 67]",
+            "ringWidth": "2"
+        }
+    }
+}
