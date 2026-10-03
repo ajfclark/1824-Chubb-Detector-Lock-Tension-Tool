@@ -12,9 +12,9 @@ boltActuatorY=20;
 
 channelD=4;
 
-fitTollerance=.75;
+fitTollerance=.35;
 
-postHoleD=postD + fitTollerance;
+postHoleD=postD + fitTollerance*2;
 keyR=keyD/2;
 
 ringPositions=[52.5,56,63.5,67];
@@ -62,9 +62,9 @@ difference(){
     translate([0,0,-offset]) cylinder(h=postLength+offset,d=postHoleD);
 
 	// handle notch
-	translate([0,0,keyLength+3.5]) cube([keyD,keyR,keyD],center=true);
+	translate([0,0,keyLength+3.5]) cube([keyD,keyR+fitTollerance,keyD],center=true);
 	// handle key
-	translate([0,0,keyLength-1]) cube([keyR,keyR,keyD],center=true);
+	translate([0,0,keyLength-1]) cube([keyR+fitTollerance,keyR+fitTollerance,keyD],center=true);
 }
 
 translate([handleLength,0,0]) handle();
